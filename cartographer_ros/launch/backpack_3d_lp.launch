@@ -28,7 +28,7 @@
       output="screen">
 
     <remap from="imu" to="/camera/imu" />
-    <remap from="points2" to="/camera/depth/color/points" />
+    <remap from="points2" to="/lslidar_point_cloud" />
   </node>
 
   <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"

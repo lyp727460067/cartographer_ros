@@ -43,7 +43,17 @@ options = {
   landmarks_sampling_ratio = 1.,
 }
 
+
+
+
 TRAJECTORY_BUILDER_3D.num_accumulated_range_data = 160
+TRAJECTORY_BUILDER_3D.voxel_filter_size = 0.2
+TRAJECTORY_BUILDER_3D.ceres_scan_matcher.occupied_space_weight_0=10
+TRAJECTORY_BUILDER_3D.ceres_scan_matcher.occupied_space_weight_1=10
+TRAJECTORY_BUILDER_3D.ceres_scan_matcher.rotation_weight=10
+
+
+
 
 MAP_BUILDER.use_trajectory_builder_3d = true
 MAP_BUILDER.num_background_threads = 7
